@@ -15,7 +15,7 @@ export function loadFooter() {
               <span>+998993895567</span>
             </div>
             <div class="contact-item">
-              <a href="https://t.me/your_bot_username" target="_blank">
+              <a href="https://t.me/ScootUzBot" target="_blank">
                 <img src="img/telegram-icon.png" alt="Telegram" class="icon">
               </a>
             </div>
