@@ -35,7 +35,7 @@ function initSignupModal() {
     };
 
     try {
-      const res = await fetch("http://localhost:7777/api/signup", {
+      const res = await fetch("https://scoot-backend-1.onrender.com/api/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
