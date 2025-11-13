@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoot - Bosh sahifa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.mjs" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Scoot</div>
+      <nav class="nav">
+        <a href="index.html" class="active">Bosh sahifa</a>
+        <a href="about.html">Haqida</a>
+        <a href="careers.html">Karyera</a>
+        <a href="locations.html">Joylashuvlar</a>
+      </nav>
+      <button class="btn-header">Scootingni boshlash</button>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home">
+    <div class="container home-container">
+      <h1>Skuter ijarasi endi oson</h1>
+      <p>Foydalanish, topish va safaringizdan zavqlanish oson</p>
+      <div class="home-cards">
+        <div class="card">
+          <img src="img/locate.png" alt="Topish">
+          <h3>Dastur orqali toping</h3>
+          <p>Yaqin atrofdagi skuterlarni tez toping.</p>
+        </div>
+        <div class="card">
+          <img src="img/pick.png" alt="Skuterni tanlash">
+          <h3>Skuteringizni tanlang</h3>
+          <p>O‘zingizga yoqqan modelni tanlang.</p>
+        </div>
+        <div class="card">
+          <img src="img/enjoy.png" alt="Zavqlanish">
+          <h3>Safardan zavqlaning</h3>
+          <p>Shahar ichida xavfsiz va maroqli harakat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  
+    <!-- Modal (ro‘yxatdan o‘tish formasi) -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h3>Ro‘yxatdan o‘tish</h3>
+        <form id="signupForm">
+          <input type="text" name="name" placeholder="Ismingiz" required>
+          <input type="tel" name="phone" placeholder="Telefon raqamingiz" required>
+          <button type="submit" class="btn-submit">Yuborish</button>
+        </form>
+        <p id="signupMessage"></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

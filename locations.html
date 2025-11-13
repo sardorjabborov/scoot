@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoot - Joylashuvlar</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- JS modul -->
+  <script type="module" src="./js/app.mjs" defer></script>
+
+  <style>
+    /* Xarita balandligi va responsive */
+    #map {
+      height: 500px;
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      #map { height: 400px; }
+    }
+
+    @media (max-width: 480px) {
+      #map { height: 300px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">Scoot</div>
+      <nav class="nav">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="about.html">Haqida</a>
+        <a href="careers.html">Karyera</a>
+        <a href="locations.html">Joylashuvlar</a>
+      </nav>
+      <button class="btn-header" id="openSignup">Scootingni boshlash</button>
+    </div>
+  </header>
+
+  <!-- Locations Section -->
+  <section class="locations">
+    <div class="container locations-container">
+      <h2>Joylashuvlar</h2>
+      <div id="map"></div>
+    </div>
+  </section>
+
+  <!-- Footer container (dynamic) -->
+  <div id="footerContainer"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</body>
+</html>
