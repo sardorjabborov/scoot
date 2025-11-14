@@ -11,12 +11,12 @@ export function loadFooter() {
           <!-- Aloqa bo‘limi -->
           <div class="contact-section">
             <div class="contact-item">
-              <img src="img/phone-icon.png" alt="Telefon" class="icon">
+              <img src="public/img/phone-icon.png" alt="Telefon" class="icon">
               <span>+998993895567</span>
             </div>
             <div class="contact-item">
               <a href="https://t.me/ScootUzBot" target="_blank">
-                <img src="img/telegram-icon.png" alt="Telegram" class="icon">
+                <img src="public/img/telegram-icon.png" alt="Telegram" class="icon">
               </a>
             </div>
           </div>
