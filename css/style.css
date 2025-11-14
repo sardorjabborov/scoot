@@ -135,7 +135,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* --- Aloqa (bog‘lanish) bo‘limi --- */
+/* --- Contact Section --- */
 .footer .contact-section {
   margin-top: 1rem;
   display: flex;
@@ -158,7 +158,7 @@ body {
   height: 24px;
 }
 
-/* --- Ro‘yxatdan o‘tish tugmasi --- */
+/* --- Signup Button --- */
 .footer button#openSignup {
   background-color: #007BFF;
   color: #fff;
@@ -173,7 +173,7 @@ body {
   background-color: #0056b3;
 }
 
-/* --- Modal oynasi --- */
+/* --- Modal --- */
 .modal {
   display: none;
   position: fixed;
@@ -188,7 +188,7 @@ body {
 
 .modal-content {
   background-color: #fff;
-  margin: 10% auto;
+  margin: 15% auto; /* Desktop uchun o‘rtaga biroz pastga tushadi */
   padding: 2rem;
   border-radius: 10px;
   width: 90%;
@@ -239,22 +239,13 @@ body {
   font-weight: 500;
 }
 
-/* --- Xarita balandligi --- */
+/* --- Map --- */
 #map {
-  height: 500px; /* minimum balandlik */
+  height: 500px;
   width: 100%;
   border-radius: 10px;
   margin-top: 2rem;
 }
-
-@media (max-width: 768px) {
-  #map { height: 400px; }
-}
-
-@media (max-width: 480px) {
-  #map { height: 300px; }
-}
-
 
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
@@ -278,6 +269,10 @@ body {
   .footer .contact-section {
     flex-direction: column;
   }
+
+  #map {
+    height: 400px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -294,13 +289,10 @@ body {
   }
 
   .modal-content {
-    margin: 20% auto;
+    margin: 25% auto !important; /* Telefon ekranida modal pastroq chiqadi */
+  }
+
+  #map {
+    height: 300px;
   }
 }
-
-@media (max-width: 480px) {
-  .modal-content {
-    margin: 20% auto; /* yuqoridan biroz pastga tushadi */
-  }
-}
-
